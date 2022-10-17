@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %} 
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Newsletter</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Newsletter</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+        <div class="section-title">
+            
+                <h4>Our Newsletter</h4>
+                <p>Sign up our newsletter for monthly digest! No spam, once a month only</p>
+                <form action="/Newsletter" method="post" >
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+          
+          </div>
+    
+
+  </main><!-- End #main -->
+{% endblock %}
+
+  
