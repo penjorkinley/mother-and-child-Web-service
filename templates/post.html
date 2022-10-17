@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %} 
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Educational Content</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Educational Content</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+
+    
+
+    <!-- Page Header -->
+    {% set fname = 'img/' + post.img_file %}
+    <header class="masthead" style="background-image: url('static\img\logo.png')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>{{post.title}}</h1>
+              <h2 class="subheading">You can add subheading here</h2>
+              <span class="meta">Posted by
+                <a href="#">Admin</a>
+                on {{post.date}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            {{post.content}}
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+
+{% endblock %}
